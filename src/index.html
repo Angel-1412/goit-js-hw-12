@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>HW 12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
-
-    <load src="./partials/footer.html" />
-
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search images..." />
+      <button type="submit">Search</button>
+    </form>
+    <ul class="gallery"></ul>
+    <div id="loader" class="loader">Loading images, please wait...</div>
+    <button id="load-more" class="hidden">Load more</button>
+    <div id="end-message" style="display:none;">
+      We're sorry, but you've reached the end of search results.
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
